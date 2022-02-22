@@ -45,7 +45,7 @@ body {
     padding-right: 3rem;
     position: relative;
     padding-top: 4rem;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .title {
     font-style: normal;
@@ -79,4 +79,66 @@ body {
     width: 663px;
     height: 548px;
     z-index: -10;
+}
+.blur {
+    background: radial-gradient(53.9% 53.9% at 77.01% 30.21%, rgba(31, 195, 231, 0.84375) 0%, #1F34E7 100%);
+    opacity: 0.41;
+    border-radius: 9999px;
+    filter: blur(300px);
+    position: absolute;
+    z-index: -100;
+}
+.blur.satu {
+    width: 457px;
+    height: 457px;
+    left: -247px;
+    top: 12rem;
+}
+.blur.dua {
+    width: 457px;
+    height: 457px;
+    left: 125px;
+    top: 24rem;
+}
+.blur.tiga {
+    width: 776px;
+    height: 776px;
+    right: -10rem;
+    top: -12rem;
+}
+.circle {
+    z-index: -50;
+    position: absolute;
+}
+.circle-1 {
+    width: 252px;
+    height: 73px;
+    right: 4rem;
+    top: 5rem;
+    opacity: 0.4;
+    transform: rotate(6.07deg);
+}
+.circle-2 {
+    width: 107px;
+    height: 31px;
+    right: 34rem;
+    top: 5rem;
+    opacity: 0.7;
+    transform: rotate(7.82deg);
+}
+.circle-3 {
+    width: 107px;
+    height: 31px;
+    right: 40rem;
+    top: 10rem;
+    transform: rotate(-33.52deg);
+}
+.circle-4 {
+    position: absolute;
+    width: 65px;
+    height: 19px;
+    left: 50vw;
+    top: 24rem;
+    opacity: 0.3;
+    transform: rotate(7.82deg);
 }
