@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="navbar">
+        <!-- Navbar -->
+        <nav class="navbar" id="open">
             <img src="assets/logo.svg" class="logo" />
             <nav class="navlink">
                 <a href="/">Home</a>
@@ -17,8 +18,22 @@
             <button class="button">
                 SignUp
             </button>
-            <button class="menu-btn"></button>
+            <a href="#menu" class="menu-btn"></a>
         </nav>
+        <!-- Mobile Menu -->
+        <div class="menu" id="menu" hidden>
+            <nav class="navlink">
+                <a href="/">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <button class="button">
+                SignUp
+            </button>
+            <a href="#" class="close-btn">x</a>
+        </div>
+        <!-- Hero -->
         <section class="hero">
             <h1 class="title">
                 <strong>Explore</strong> the fascinating world of VR

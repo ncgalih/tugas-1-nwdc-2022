@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 body {
     background-color: black;
     font-family: 'SF Pro Display';
@@ -25,7 +28,6 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    text-decoration: none;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -182,7 +184,7 @@ body {
     }
 }
 @media only screen and (max-width: 540px) {
-    .navlink, nav .button{
+    .navbar .navlink, .navbar .button{
         display: none;
     }
     .navbar {
@@ -208,4 +210,39 @@ body {
     .menu-btn {
         display: block;
     }
+    .menu {
+        display: flex;
+    }
+}
+.menu {
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    z-index: 101;
+    flex-direction: column;
+    transform: translateX(100vw);
+    transition: all 1s;
+}
+.menu .navlink {
+    flex-direction: column;
+}
+.menu .button {
+    margin: 0.5rem auto 0 auto;
+}
+.menu .navlink a {
+    margin-bottom: 1rem;
+    font-size: medium;
+}
+.menu:target {
+    display: flex;
+    transform: translateY(0);
+}
+.close-btn {
+    color: gray;
+    margin-top: 1rem;
+    font-size: xx-large;
 }
