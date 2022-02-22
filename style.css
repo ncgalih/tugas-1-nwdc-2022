@@ -142,3 +142,70 @@ body {
     opacity: 0.3;
     transform: rotate(7.82deg);
 }
+.navlink {
+    display: flex;
+}
+/*Menu Button*/
+.menu-btn {
+    display: none;
+    width: 30px;
+    background: transparent;
+    border: none;
+}
+.menu-btn:before, .menu-btn:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 3px;
+}
+.menu-btn:before {
+    box-shadow: 0 10px 0 #fff;
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 840px) {
+    .navlink a {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+    .title {
+        margin-top: 5rem;
+    }
+    .robo {
+        width: 32rem;
+        height: auto;
+        top: 18rem;
+        left: 20rem;
+    }
+    .subtitle {
+        max-width: 20rem;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .navlink, nav .button{
+        display: none;
+    }
+    .navbar {
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+    }
+    .hero {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .title {
+        margin-top: 3rem;
+    }
+    .robo {
+        left: 1.5rem;
+        top: 24rem;
+        width: 32rem;
+        height: auto;
+    }
+    .subtitle {
+        max-width: 100%;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
