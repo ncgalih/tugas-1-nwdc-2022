@@ -16,10 +16,10 @@ body {
     padding-right: 3rem;
     padding-left: 3rem;
     position: fixed;
+    z-index: 100;
     width: 100vw;
 }
 .navlink a {
-    font-family: SF Pro Display;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -39,4 +39,44 @@ body {
     background-color: transparent;
     border-radius: 6px;
 }
-                                                
+.hero {
+    height: 100vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+    padding-top: 4rem;
+    overflow-y: hidden;
+}
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    color: white;
+    margin-top: 8rem;
+    max-width: 32rem;
+    z-index: 10;
+}
+.title strong {
+    color: #9BA4ED;
+}
+.subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    margin-top: 4px;
+    max-width: 28rem;
+}
+.hero .button {
+    margin-top: 18px;
+}
+.robo {
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+    width: 663px;
+    height: 548px;
+    z-index: -10;
+}
